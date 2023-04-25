@@ -1,0 +1,12 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Hello";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<h2>Tutaj wyswietlamy częściowego Viewsa</h2>
+
+@await Html.PartialAsync("Partial")

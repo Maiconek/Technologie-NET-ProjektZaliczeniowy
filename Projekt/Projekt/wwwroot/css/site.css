@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+
+nav {
+    background-color: #009879;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    line-height: 80px;
+    padding-left: 100px;
+    float: left;
+}
+
+nav > ul {
+    float: right;
+    margin-right: 20px;
+}
+
+    nav > ul > li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+        nav > ul > li > a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 7px 13px;
+            border-radius: 5px;
+        }
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    background: #02866c;
+    transition: 0.5s;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #009879;
+    color: white;
+    float: left;
+}
+
+.author {
+    text-decoration: none;
+    color: #FFC72C;
+}
+
+    .author:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+
+.white {
+    color: white;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+/*.container a {
+    font-family: 'Adobe Arabic';
+    font-size: 25px;
+}*/
+
+.title {
+    color: #009879;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bcenter {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.refresh {
+    background-color: gray;
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    color: white;
+}
+
+.refresh:hover {
+    opacity: 0.8;
+}
+
+form p label {
+    width: 10%;
+}
+
+form p input[type="text"], form p input[type="number"] {
+    width: 20%;
+}
+
+form p span {
+    width: 20%;
+    color: red;
+}
+
+form p button, table button {
+    background-color: #006bff;
+    color: #FFF;
+}
+
+form p .input-validation-error {
+    border: 1px solid Red;
+    background-color: #fee;
+}
+
+table {
+    border: solid 1px #ff6a00;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table thead {
+    background: #b6ff00;
+}
+
+table td, table th {
+    padding: 10px;
+}
+
+.details {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.page-content {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+@{
+    ViewData["Title"] = "Informations";
+    Layout = "Layout2";
+}
+
+<h1 class="mt-1">Informations</h1>
+<div class="bcenter">
+    <button class="refresh" id="bRefresh" data-url="@Url.Action("YoungProducers")">Producers</button>
+    <button class="refresh" id="mRefresh" data-url="@Url.Action("NolanMovies")">Nolan</button>
+</div>
+<div id="table"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#bRefresh').click(function () {
+            $('#table').load('/Home/YoungProducers');
+        });
+    });
+    $(function () {
+        $('#mRefresh').click(function () {
+            $('#table').load('/Home/NolanMovies');
+        });
+    });
+</script>
+
+<script>
+    $(function () {
+        $('#bRefresh').click();
+    });
+    $(function () {
+        $('#mRefresh').click();
+    });
+</script>

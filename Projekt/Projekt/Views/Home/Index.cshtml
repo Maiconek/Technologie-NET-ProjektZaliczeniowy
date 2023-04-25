@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Producer
+
+
+<div class="page-content">
+    <h1>Welcome to the App!</h1>
+    <p>Movie count: @ViewBag.Movie</p>
+    <p>Producer count: @ViewBag.Producer</p>
+    <p>Actor count: @ViewBag.Actor</p>
+    <p>Recommended Movie for you:</p>
+    <recommend-movie path="wwwroot\txt\Movies.txt" style="color: #FFC72C;"></recommend-movie>
+    <p><a asp-controller="Movie"asp-action="Index">Go to movies</a></p>
+</div>

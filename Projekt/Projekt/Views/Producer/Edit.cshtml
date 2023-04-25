@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Producer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+<a asp-action="Index">Go back</a>
+
+<form method="post" asp-action="Edit">
+    <p>
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </p>
+    <p>
+        <label asp-for="Country">Country:</label>
+        <input asp-for="Country" />
+        <span asp-validation-for="Country"></span>
+    </p>
+    <p>
+        <label asp-for="YearOfFoundation">Year of Foundation:</label>
+        <input asp-for="YearOfFoundation" />
+        <span asp-validation-for="YearOfFoundation"></span>
+    </p>
+
+    <p><input type="submit" value="Edit"></p>
+</form>

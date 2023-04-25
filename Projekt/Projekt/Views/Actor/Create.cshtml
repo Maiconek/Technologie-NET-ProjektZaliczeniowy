@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Actor
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+<a asp-action="Index">Go back</a>
+
+<form method="post" asp-action="Create">
+
+    <p>
+        <label asp-for="FirstName">Firstname:</label>
+        <input asp-for="FirstName"/>
+        <span asp-validation-for="FirstName"></span>
+    </p>
+    <p>
+        <label asp-for="LastName">Lastname:</label>
+        <input asp-for="LastName" />
+        <span asp-validation-for="LastName"></span>
+    </p>
+    <p>
+        <label asp-for="YearOfBirth">Year of Birth:</label>
+        <input asp-for="YearOfBirth" />
+        <span asp-validation-for="YearOfBirth"></span>
+    </p>
+    <p><button type="submit">Create</button></p>
+</form>
